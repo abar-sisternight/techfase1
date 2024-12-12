@@ -30,5 +30,5 @@ def scrape_viti_processamento():
 def scrape_viti_comercializacao():
     url = "http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_04"
     
-    return get_content_comercializacao(url)
+    return get_content_comercializacao_full(url)
  
