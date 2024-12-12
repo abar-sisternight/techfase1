@@ -18,4 +18,4 @@ swagger = Swagger(app)
 from app.utils import auth as auth_utils
 
 # Import routes (after 'app' is fully initialized)
-from app.route import auth, crud, scrape
+from app.route import auth, scrape
