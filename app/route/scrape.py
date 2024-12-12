@@ -1,7 +1,6 @@
 
 from flask import request, jsonify
-from app import app, auth
-from app.scrapping.crawler import get_title, get_content
+from app import app, auth, config
 from app.data.producao import get_content_producao, get_content_producao_full
 from app.data.processamento import get_content_processamento, get_content_processamento_full
 from app.data.comercializacao import get_content_comercializacao, get_content_comercializacao_full
@@ -31,4 +30,7 @@ def scrape_viti_comercializacao():
     url = "http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_04"
     
     return get_content_comercializacao_full(url)
+
+
+
  

@@ -1,12 +1,12 @@
-# My Flask API
+# Embrapa
 
-Este é um projeto de API desenvolvido com Flask, que inclui operações CRUD, web scraping e autenticação básica.
+Este é um projeto de API desenvolvido com Flask, que inclui operações CRUD, web scraping em páginas do dominio http://vitibrasil.cnpuv.embrapa.br/ e autenticação básica.
 
 ## 🚀 Funcionalidades
 
 - **Autenticação Básica**: Protege rotas sensíveis usando autenticação HTTP básica.
 - **Operações CRUD**: Permite criar, ler, atualizar e deletar itens.
-- **Web Scraping**: Extrai dados de páginas web (título, cabeçalhos, parágrafos) usando BeautifulSoup.
+- **Web Scraping**: Extrai dados de páginas web http://vitibrasil.cnpuv.embrapa.br/ (label, table, tbody, tr, td) usando BeautifulSoup.
 - **Cache e Documentação**: Implementa cache para otimização e documentação automática com Swagger.
 
 ## 📁 Estrutura do Projeto
@@ -15,27 +15,31 @@ Este é um projeto de API desenvolvido com Flask, que inclui operações CRUD, w
 intro_api/
 ├── app/
 │   ├── __init__.py
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── comercializacao.py
+│   │   ├── exportacao.py
+│   │   └── importacao.py
+│   │   └── processamento.py
+│   │   └── producao.py
 │   ├── routes/
 │   │   ├── __init__.py
-│   │   ├── auth_routes.py
-│   │   ├── crud_routes.py
-│   │   └── scrape_routes.py
-│   ├── services/
-│   │   ├── __init__.py
-│   │   └── scraping_service.py
+│   │   ├── auth.py
+│   │   ├── crud.py
+│   │   └── scrape.py
 │   ├── utils/
 │   │   ├── __init__.py
 │   │   └── auth.py
 │   └── config.py
 ├── requirements.txt
-├── Dockerfile
 ├── README.md
 └── run.py
 ```
 
 - **`app/`**: Diretório principal do aplicativo.
-  - **`routes/`**: Contém as rotas organizadas por funcionalidades.
-  - **`services/`**: Serviços para lógica de negócios, como scraping.
+  - **`data/`**: Classes para lógica de negócios para scrapping das informações (comercializacao, exportacao, importacao, processamento, produção) do site da embrapa.
+  - **`routes/`**: Contém as rotas organizadas por acesso aos dados no site da embrapa. 
+                   As rotas não recebem argumentos uma vez que o método captura todas as datas disponíveis no site para consulta.
   - **`utils/`**: Utilitários, como autenticação.
   - **`config.py`**: Configurações da aplicação Flask.
 - **`run.py`**: Ponto de entrada para iniciar o aplicativo.
@@ -48,8 +52,8 @@ intro_api/
 ### 1. Clone o Repositório
 
 ```bash
-git clone https://github.com/ileoh/flask_exemplo
-cd my_flask_app
+git clone https://github.com/nat-lima/techfase1
+cd techfase1
 ```
 
 ### 2. Crie um Ambiente Virtual
@@ -71,21 +75,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-O aplicativo estará disponível em `http://localhost:5000`.
-
-## 🐳 Como Usar com Docker
-
-### 1. Construa a Imagem Docker
-
-```bash
-docker build -t my-flask-api .
-```
-
-### 2. Execute o Container
-
-```bash
-docker run -p 5000:5000 my-flask-api
-```
+O aplicativo estará disponível em `http://localhost:5000` ou `http://127.0.0.1:5000`
 
 Acesse a aplicação em `http://localhost:5000`.
 
