@@ -109,6 +109,9 @@ npm i -g vercel
 vercel
 vercel --prod
 ```
+
+Link vercel: https://techfase1-5hy7sbf38-vivianas-projects-ee28f91d.vercel.app/#
+
 ### 6. Arquitetura
 
 ![Arquitetura](https://github.com/user-attachments/assets/a0504d68-3e2d-4189-bd34-4f6a67f82d70)
