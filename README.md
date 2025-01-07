@@ -102,6 +102,7 @@ Criar arquivo vercel.json:
     ]
   }
 ```
+Rode no terminal:
 
 ```bash
 npm i -g vercel
