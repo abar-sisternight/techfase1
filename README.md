@@ -81,10 +81,14 @@ Acesse a aplicação em `http://localhost:5000`.
 
 ### 5. Deploy na Vercel
 
-Instale o Node.js
-Crie uma conta na Vercel em https://vercel.com/
+Instale o Node.js.
+
+Crie uma conta na Vercel em https://vercel.com/.
+
 Instale no VSCode a extensão da Vercel oficial.
+
 Criar arquivo vercel.json:
+```bash
 {
     "version": 2,
     "builds": [
@@ -97,6 +101,7 @@ Criar arquivo vercel.json:
       { "src": "/(.*)", "dest": "run.py" }
     ]
   }
+```
 
 ```bash
 npm i -g vercel
