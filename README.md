@@ -105,8 +105,7 @@ vercel --prod
 ```
 ### 6. Arquitetura
 
-![Arquitetura](D:\0Viviana\1 FIAP\1 fase\challenge\techfase1\image\Arquitetura.jpg)
-
+![Arquitetura](https://github.com/user-attachments/assets/a0504d68-3e2d-4189-bd34-4f6a67f82d70)
 
 ## 📖 Documentação da API
 
