@@ -79,6 +79,35 @@ O aplicativo estará disponível em `http://localhost:5000` ou `http://127.0.0.1
 
 Acesse a aplicação em `http://localhost:5000`.
 
+### 5. Deploy na Vercel
+
+Instale o Node.js
+Crie uma conta na Vercel em https://vercel.com/
+Instale no VSCode a extensão da Vercel oficial.
+Criar arquivo vercel.json:
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "run.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "run.py" }
+    ]
+  }
+
+```bash
+npm i -g vercel
+vercel
+vercel --prod
+```
+### 6. Arquitetura
+
+![Arquitetura](D:\0Viviana\1 FIAP\1 fase\challenge\techfase1\image\Arquitetura.jpg)
+
+
 ## 📖 Documentação da API
 
 A documentação da API é gerada automaticamente com Swagger e está disponível em `http://localhost:5000/apidocs/`.
