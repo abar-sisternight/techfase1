@@ -58,6 +58,12 @@ def get_content_comercializacao(url):
                                     })          
                     item = ""
                     quantidade = ""
+        if response == 200:
+            df = pd.DataFrame(consulta['Comercializacao'])
+
+            with pd.ExcelWriter('.\\results_comercializacao.xlsx') as writer:
+                df.to_excel(writer, sheet_name='comercializacao', index=False)
+                
         return jsonify(consulta)
                                     
     except Exception as e:

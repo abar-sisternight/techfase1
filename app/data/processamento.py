@@ -68,6 +68,12 @@ def get_content_processamento(url):
                                         })        
                           
                         item = ""
+        if response == 200:
+            df = pd.DataFrame(consulta['Processamento'])
+
+            with pd.ExcelWriter('.\\results_processamento.xlsx') as writer:
+                df.to_excel(writer, sheet_name='processamento', index=False)
+
         return jsonify(consulta)
                                     
     except Exception as e:

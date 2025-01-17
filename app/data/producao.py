@@ -59,6 +59,13 @@ def get_content_producao(url):
                                             "medida" : unidadeMedida                            
                                         })          
                         item = ""
+ 
+        if response == 200:
+            df = pd.DataFrame(consulta['Producao'])
+
+            with pd.ExcelWriter('.\\results_producao.xlsx') as writer:
+                df.to_excel(writer, sheet_name='producao', index=False)
+
 
         return jsonify(consulta)
                                     

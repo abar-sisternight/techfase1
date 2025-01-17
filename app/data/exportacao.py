@@ -57,6 +57,12 @@ def get_content_exportacao(url):
                                 "tipo" : subconsulta_desc
                             })
 
+        if response == 200:
+            df = pd.DataFrame(consulta['Exportacao'])
+
+            with pd.ExcelWriter('.\\results_exportacao.xlsx') as writer:
+                df.to_excel(writer, sheet_name='exportacao', index=False)
+ 
         return jsonify(consulta)
 
     except Exception as e:

@@ -59,6 +59,11 @@ def get_content_importacao(url):
                                 "medida": unidadeMedida, 
                                 "tipo" : subconsulta_desc
                             })
+        if response == 200:
+            df = pd.DataFrame(consulta['Importacao'])
+
+            with pd.ExcelWriter('.\\results_importacao.xlsx') as writer:
+                df.to_excel(writer, sheet_name='importacao', index=False)
 
         return jsonify(consulta)
 
