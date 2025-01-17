@@ -6,7 +6,7 @@ from app.data.processamento import get_content_processamento
 from app.data.comercializacao import get_content_comercializacao
 from app.data.importacao import get_content_importacao
 from app.data.exportacao import get_content_exportacao
-from app.route.linksviti import url_viti_exportacao, url_viti_importacao, url_viti_processamento, url_viti_producao, url_viti_comercial
+from app.utils.linksviti import url_viti_exportacao, url_viti_importacao, url_viti_processamento, url_viti_producao, url_viti_comercial
 
 #ROUTE PRODUCAO
 @app.route('/scrape/vitiproducao', methods=['GET'])
