@@ -1,0 +1,5 @@
+url_viti_exportacao = "http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_06"
+url_viti_importacao ="http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_05"
+url_viti_comercial = "http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_04"
+url_viti_processamento = "http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_03"
+url_viti_producao = "http://vitibrasil.cnpuv.embrapa.br/index.php?opcao=opt_02"

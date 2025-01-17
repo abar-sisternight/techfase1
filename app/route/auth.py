@@ -5,8 +5,8 @@ from app import app, auth
 def home():
     return "Hello Anonimous user!"
 
-@app.route('/login', methods=['GET'])
-@auth.login_required #natycomments: está referenciando o auth que está em app.auth, o qual foi inicianizado com o httpbasicauth
+@app.route('/auth/login', methods=['GET'])
+@auth.login_required 
 def login():
     username = format(auth.current_user())
     return jsonify({"message": "Hello: " + username })

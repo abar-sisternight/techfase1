@@ -1,9 +1,8 @@
 from app import auth
 
 USERS = {
-    "admin": "secret",
-    "user": "password", 
-    "nat.lima" : "1234"
+    "nat.lima" : "1234",
+    "guest" : "tech@fase1"
 }
 
 @auth.verify_password
