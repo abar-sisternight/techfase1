@@ -110,9 +110,9 @@ vercel
 vercel --prod
 ```
 
-Link vercel: https://techfase1-5hy7sbf38-vivianas-projects-ee28f91d.vercel.app/#
+Link vercel: https://techfase1-os3qjey46-vivianas-projects-ee28f91d.vercel.app
 
-Link vercel doc api: https://techfase1-5hy7sbf38-vivianas-projects-ee28f91d.vercel.app/apidocs/
+Link vercel doc api: https://techfase1-os3qjey46-vivianas-projects-ee28f91d.vercel.app/apidocs/
 
 ### 6. Arquitetura
 
