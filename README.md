@@ -5,8 +5,8 @@ Este é um projeto de API desenvolvido com Flask, que inclui operações CRUD, w
 ## 🚀 Funcionalidades
 
 - **Autenticação Básica**: Protege rotas sensíveis usando autenticação HTTP básica.
-- **Operações CRUD**: Permite criar, ler, atualizar e deletar itens.
 - **Web Scraping**: Extrai dados de páginas web http://vitibrasil.cnpuv.embrapa.br/ (label, table, tbody, tr, td) usando BeautifulSoup.
+- **API Embrapa**: Extrai dados provenientes da extração da pagina web vitibrasil em formato JSON.
 - **Cache e Documentação**: Implementa cache para otimização e documentação automática com Swagger.
 
 ## 📁 Estrutura do Projeto
@@ -25,7 +25,7 @@ intro_api/
 │   ├── routes/
 │   │   ├── __init__.py
 │   │   ├── auth.py
-│   │   ├── crud.py
+│   │   ├── linksviti.py
 │   │   └── scrape.py
 │   ├── utils/
 │   │   ├── __init__.py
