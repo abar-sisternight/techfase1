@@ -6,7 +6,7 @@ Este é um projeto de API desenvolvido com Flask, que inclui web scraping em pá
 
 - **Autenticação Básica**: Protege rotas sensíveis usando autenticação HTTP básica.
 - **Web Scraping**: Extrai dados de páginas web http://vitibrasil.cnpuv.embrapa.br/ (label, table, tbody, tr, td) usando BeautifulSoup.
-- **API Embrapa**: Extrai dados provenientes da extração da pagina web vitibrasil em formato JSON.
+- **API Embrapa**: Expõe dados provenientes da extração da pagina web vitibrasil em formato JSON.
 - **Cache e Documentação**: Implementa cache para otimização e documentação automática com Swagger.
 
 ## 📁 Estrutura do Projeto
