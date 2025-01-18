@@ -12,7 +12,7 @@ Este é um projeto de API desenvolvido com Flask, que inclui web scraping em pá
 ## 📁 Estrutura do Projeto
 
 ```bash
-intro_api/
+techfase1/
 ├── app/
 │   ├── __init__.py
 │   ├── data/
