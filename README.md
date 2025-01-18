@@ -2,6 +2,10 @@
 
 Este é um projeto de API desenvolvido com Flask, que inclui web scraping em páginas do dominio http://vitibrasil.cnpuv.embrapa.br/ e autenticação básica.
 
+## Link video
+
+https://drive.google.com/file/d/1kI1DZXqvbvSgiWLqt8x2JfOiQ-eMeRmE/view?usp=sharing
+
 ## 🚀 Funcionalidades
 
 - **Autenticação Básica**: Protege rotas sensíveis usando autenticação HTTP básica.
