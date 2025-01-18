@@ -1,6 +1,6 @@
 # Embrapa
 
-Este é um projeto de API desenvolvido com Flask, que inclui operações CRUD, web scraping em páginas do dominio http://vitibrasil.cnpuv.embrapa.br/ e autenticação básica.
+Este é um projeto de API desenvolvido com Flask, que inclui web scraping em páginas do dominio http://vitibrasil.cnpuv.embrapa.br/ e autenticação básica.
 
 ## 🚀 Funcionalidades
 
