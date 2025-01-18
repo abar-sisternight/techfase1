@@ -116,7 +116,7 @@ Link vercel doc api: https://techfase1-angn7okrl-vivianas-projects-ee28f91d.verc
 
 ### 6. Arquitetura
 
-![Arquitetura](https://github.com/user-attachments/assets/a0504d68-3e2d-4189-bd34-4f6a67f82d70)
+![Arquitetura (1)](https://github.com/user-attachments/assets/da046818-c16c-4688-8ec7-f92d9b91d60f)
 
 ## 📖 Documentação da API
 
